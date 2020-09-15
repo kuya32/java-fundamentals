@@ -1,4 +1,5 @@
-
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Main {
   public static void main(String[] args) {
@@ -13,12 +14,7 @@ public class Main {
 
     // flipNHeads(4);
 
-    // LocalDateTime now = LocalDateTime.now();
-    // int hour = now.getHour();
-    // int minute = now.getMinute();
-    // int second = now.getSecond();
-    // or, if you're feeling fancy
-    // String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+    clock();
   }
 
   public static String pluralize(String word, int number) {
@@ -53,7 +49,19 @@ public class Main {
     return number;
   }
 
-  public static LocalDateTime clock(LocalDateTime now) {
-    
+  public static void clock () {
+    LocalDateTime now = LocalDateTime.now();
+    String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+    String newTime = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+
+    while(true) {
+      now = LocalDateTime.now();
+      newTime = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+
+      if (!time.equals(newTime)) {
+        time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+        System.out.println(time);
+      }
+    }
   }
 }

@@ -16,7 +16,8 @@ public class MapsTest {
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
-        assertEquals("High: 72", maps.missingTemps(weeklyMonthTemperatures));
+        String returnString = "High: 72\nLow: 51\nNever saw temperature: 63\nNever saw temperature: 67\nNever saw temperature: 68\nNever saw temperature: 69";
+        assertEquals(returnString, maps.missingTemps(weeklyMonthTemperatures));
     }
 
     @Test public void testVotes() {

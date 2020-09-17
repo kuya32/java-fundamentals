@@ -34,6 +34,25 @@
 
 - Then given an array of arrays calculate the average value for each array and return the array with the lowest average.
 
+### Analyzing Weather Data
+
+- Use the October Seattle weather data above. Iterate through all of the data to find the min and max values. Use a HashSet of type Integer to keep track of all the unique temperatures seen. Finally, iterate from the min temp to the max temp and create a String containing any temperature not seen during the month. Return that String.
+
+### Tallying Election
+
+- Write a function called tally that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+
+### JavaScript Linter
+
+- Write a method that reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
+
+- Read through the file line by line. Create a string that contains a message such as "Line 3: Missing semicolon." if a line is missing a semicolon.
+  - Don’t show an error if the line is empty.
+  - Don’t show an error if the line ends with an opening curly brace {
+  - Don’t show an error if the line ends with an closing curly brace }
+  - Don’t show an error if the line contains if or else
+- Call that method in your main method on the file gates.js, and print out the resulting error message.
+
 #### Resources
 
 - [How to generate a random number in Java](https://www.educative.io/edpresso/how-to-generate-random-numbers-in-java)
@@ -41,3 +60,11 @@
 - Got some help from Meghan and David on the Command Line Clock problem.
 
 - Assist from Nich going through lab 2 during code review.
+
+- [HashMap containsKey() method](https://www.geeksforgeeks.org/hashmap-containskey-method-in-java/)
+
+- [HashMap keySet() method](https://www.geeksforgeeks.org/hashmap-keyset-method-in-java/)
+
+- Help from Jack for Lab 3 on Tally Election function.
+
+- Worked with David, Meghan and Paul on Lab 3.

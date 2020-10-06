@@ -1,6 +1,10 @@
 # 401 Labs Table of Contents
 
-## Lab: 01 - Java primitives and control flow
+1. [Lab: 01 - Java primitives and control flow](#Java-primitive-and-control-flow)
+2. [Lab: 02 - Arrays, Loops, Imports, ArrayLists](#Arrays,-Loops,-Imports,-ArrayLists)
+3. [Lab: 06 - Inheritance and Interfaces](#Inheritance-and-Interfaces)
+
+## Java primitives and control flow
 
 - This lab is dedicated to practicing Java fundamentals. These problems will challenge your understanding of Java’s built-in primitive values (ints, floats, doubles, Strings, booleans), for loops, while loops, if statements, functions, parameters and return statements.
 
@@ -16,7 +20,7 @@
 
 - We needed to write a method ```clock``` that uses Java’s built-in ```LocalDateTime``` object to constantly print out the current time to the console, second by second. The program should run until someone manually kills it with ```CTRL-C``` or presses the “stop” button in their IDE. Each time should only be printed once. Your program should detect when the seconds increase and only print something out when the timestamp changes.
 
-## Lab 2: Arrays, Loops, Imports, ArrayLists
+## Arrays, Loops, Imports, ArrayLists
 
 - This lab is dedicated to creating, interacting with and manipulating arrays in Java. Arrays in Java have a fixed size. Arrays are created with a certain size and they never shrink or grow. Java arrays are typed. You can have an array of integers, or an array of strings, but not an array mixed with integers and strings.
 
@@ -52,6 +56,20 @@
   - Don’t show an error if the line ends with an closing curly brace }
   - Don’t show an error if the line contains if or else
 - Call that method in your main method on the file gates.js, and print out the resulting error message.
+
+## Inheritance and Interfaces
+
+- Create Restaurant and Review classes and be able to make a review for a particular restaurant.
+
+### Functionality
+
+- The toString method for both the restaurant and review class give the information for each property
+- The addReview method adds a review for a particular resturant then updates the star rating for the restaurant.
+- The averageStar method is a helper method that takes the star rating for each review and find the average to update the restaurant star rating.
+
+### Instructions for testing
+
+- Run ./gradlew test to test my code
 
 #### Resources
 

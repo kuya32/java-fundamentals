@@ -56,6 +56,8 @@
   - Don’t show an error if the line ends with an closing curly brace }
   - Don’t show an error if the line contains if or else
 - Call that method in your main method on the file gates.js, and print out the resulting error message.
+- When the user runs the app, they should see all the lines that are missing semicolons.
+- Created testing for linter method on multiple JS files.
 
 ## Inheritance and Interfaces
 

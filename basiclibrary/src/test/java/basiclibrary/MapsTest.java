@@ -1,14 +1,14 @@
-package linter;
+package basiclibrary;
 
+import static org.junit.Assert.*;
 import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 public class MapsTest {
-    @Test public void testTemperatures() {
+    @Test
+    public void testTemperatures() {
         Maps maps = new Maps();
         int[][] weeklyMonthTemperatures = {
                 {66, 64, 58, 65, 71, 57, 60},
@@ -16,11 +16,14 @@ public class MapsTest {
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
+
         String returnString = "High: 72\nLow: 51\nNever saw temperature: 63\nNever saw temperature: 67\nNever saw temperature: 68\nNever saw temperature: 69";
         assertEquals(returnString, maps.missingTemps(weeklyMonthTemperatures));
+        System.out.println(maps.missingTemps(weeklyMonthTemperatures));
     }
 
-    @Test public void testVotes() {
+    @Test
+    public void testVotes() {
         Maps maps = new Maps();
         List<String> votes = new ArrayList<>();
         votes.add("Bush");
@@ -33,8 +36,8 @@ public class MapsTest {
         votes.add("Hedge");
         votes.add("Bush");
 
-
         String winner = "Bush";
         assertEquals(winner + " received the most votes!", maps.tally(votes));
+        System.out.println(maps.tally(votes));
     }
 }

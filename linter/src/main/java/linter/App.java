@@ -9,6 +9,9 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Linter file = new Linter();
+        String returnString = Linter.linter("src/main/resources/gates.js");
+        System.out.println(returnString);
     }
+    
 }

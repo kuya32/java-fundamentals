@@ -55,7 +55,8 @@ public class Restaurant {
 //        for (int i = 0; i < restaurantReview.size(); i ++) {
 //            counter = counter + restaurantReview.get(i).getStars();
 //        }
-        this.stars = Math.round(counter/restaurantReview.size());
+        float size = counter/restaurantReview.size();
+        this.stars = Math.round(size);
     }
 
 

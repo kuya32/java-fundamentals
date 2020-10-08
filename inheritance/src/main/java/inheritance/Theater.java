@@ -6,7 +6,9 @@ public class Theater {
     public static String name;
     public static ArrayList<String> movieList = new ArrayList<>();
 
-    public Theater() {};
+    public Theater(String name) {
+        Theater.name = name;
+    };
 
     public String getName() {
         return name;
@@ -23,8 +25,6 @@ public class Theater {
     public String toString() {
         return "Theater: " + this.getName() + "\nMovie List: " + movieList;
     }
-
-
 
     public static ArrayList<String> getMovieList() {
         return movieList;

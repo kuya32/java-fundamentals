@@ -1,16 +1,11 @@
 package inheritance;
 
 public class TheaterReview extends Review{
-    public String movie;
+    public String movies;
 
-    public static void main(String[] args) {
-        TheaterReview popcorn = new TheaterReview("body", "Marchael", 5, "Harry Potter");
-        System.out.println(popcorn);
-    }
-
-    public TheaterReview(String body, String author, int stars, String movie) {
+    public TheaterReview(String body, String author, int stars, String movies) {
         super(body, author, stars);
-        this.movie = movie;
+        this.movies = movies;
     }
 
     public String toString() {
